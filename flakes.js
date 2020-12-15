@@ -115,16 +115,3 @@ function createPoint(w, h) {
     }
     return p;
 }
-
-function getColor() {
-    var cols = ['#80cbad', '#96cbb6', '#7ecbac', '#61cba1', '#9ecbb9', '#b5cbc2'];
-    return cols[Math.floor(Math.random() * cols.length)];
-}
-
-function getDist(p1, p2) {
-    return Math.floor(Math.sqrt(Math.pow(p2[0] - p1[0], 2) + Math.pow(p2[1] - p1[1], 2)));
-}
-
-function getInt(min, max) {
-    return Math.floor(Math.random() * (max + 1) + min);
-}
